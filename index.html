@@ -11,10 +11,14 @@
   <input type="text" id="subjectInput">
 <button onclick="addPeriod()">Add Period</button>
 
+<div id="output"></div>
 
 <script>
 function addPeriod() {
-  alert("Button clicked!");
+// 1. get the value typed in the input box
+const subject = getElementById("subjectInput").value;
+// 2. display it inside the output div
+document.getElementById("output").innerText = "You typed: " + subject;
 }
   </script>
 
